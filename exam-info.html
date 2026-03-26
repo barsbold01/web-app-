@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyAbroad – Exam Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="exam.css"/>
+</head>
+<body>
+
+<!-- HAMBURGER CHECKBOX -->
+<input type="checkbox" id="menu-toggle" class="menu-toggle-input"/>
+
+<!-- ═══════════════════════════════
+     SIDEBAR
+═══════════════════════════════ -->
+<aside class="sidebar">
+  <label for="menu-toggle" class="sidebar-close">✕</label>
+
+  <div class="logo">
+    <div class="logo-icon">
+      <img src="https://image2url.com/r2/default/images/1773934477074-697d0b36-7fd9-46f7-80d6-bfc7dee5106f.png" alt="logo"/>
+    </div>
+    <div class="logo-text">
+      <h2>StudyAbroad<span>Hub</span></h2>
+      <p>Your Global Edu Hub</p>
+    </div>
+  </div>
+
+  <div class="nav-label">NAVIGATION</div>
+
+  <a href="dashboard.html" class="nav-item">
+    <span class="icon"><img src="https://cdn.phototourl.com/uploads/2026-03-19-946eb2dd-3b5f-48d6-80d0-7fa75c934061.png" alt=""/></span>
+    <span>Dashboard</span>
+  </a>
+  <a href="uni.html" class="nav-item">
+    <span class="icon"><img src="https://image2url.com/r2/default/images/1773934654644-c697cf14-d089-4158-8b1e-a81d02e3512b.png" alt=""/></span>
+    <span>Universities</span>
+    <span class="arrow">›</span>
+  </a>
+  <a href="scholar.html" class="nav-item">
+    <span class="icon"><img src="https://cdn.phototourl.com/uploads/2026-03-19-e2ba4eb4-5953-46a4-8659-2ac3887cd3df.png" alt=""/></span>
+    <span>Scholarships</span>
+  </a>
+  <a href="exam-info.html" class="nav-item active">
+    <span class="icon"><img src="https://cdn.phototourl.com/uploads/2026-03-19-f01d02ea-68ce-41d6-9895-bf00d441df27.png" alt=""/></span>
+    <span>Exams</span>
+  </a>
+  <a href="#" class="nav-item">
+    <span class="icon"><img src="https://cdn.phototourl.com/uploads/2026-03-19-e3bb6416-7202-4d9e-85d2-c9cf57c5ac3b.png" alt=""/></span>
+    <span>Application Guide</span>
+  </a>
+</aside>
+
+<!-- ═══════════════════════════════
+     MAIN AREA
+═══════════════════════════════ -->
+<div class="main">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <label for="menu-toggle" class="hamburger-btn">☰</label>
+      <img src="https://cdn.phototourl.com/uploads/2026-03-19-ade37faf-97c0-4cdf-a379-aedeae1b38e1.png" class="globe-icon" alt=""/>
+      <span>Study Abroad Hub 2026</span>
+    </div>
+    <div class="topbar-right">
+      <div class="notif-btn">
+        <img src="https://image2url.com/r2/default/images/1773934572626-a0776666-b2e6-40a3-b061-1989071133b1.png" width="16" height="16" alt=""/>
+        <span class="notif-dot"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- PAGE HEADER -->
+    <div class="page-header-block">
+      <div class="page-header-left">
+        <h1 class="page-title">Exam Guide 📚</h1>
+        <p class="page-subtitle">Everything you need to know about IELTS, TOEFL, SAT, HSK & TOPIK</p>
+      </div>
+      <div class="exam-stat-pills">
+        <div class="stat-pill">
+          <span class="stat-pill-num">5</span>
+          <span class="stat-pill-label">Exams Covered</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-pill-num">140+</span>
+          <span class="stat-pill-label">Countries Accepted</span>
+        </div>
+        <div class="stat-pill accent">
+          <span class="stat-pill-num">Free</span>
+          <span class="stat-pill-label">Resources Included</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TWO-COLUMN LAYOUT -->
+    <div class="exam-layout">
+
+      <!-- ── LEFT PANEL ── -->
+      <div class="exam-left-panel">
+
+        <!-- Exam Selector -->
+        <div class="panel-card">
+          <div class="panel-card-header">Select Exam</div>
+          <div class="exam-list" id="examList"></div>
+        </div>
+
+        <!-- Quick Facts -->
+        <div class="panel-card" style="margin-top:14px;">
+          <div class="panel-card-header">Quick Facts</div>
+          <div class="quick-facts-body" id="quickFacts"></div>
+        </div>
+
+        <!-- Promo tip -->
+        <div class="tip-promo-card">
+          <div class="tip-promo-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="9" y1="21" x2="15" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              <path d="M12 3a6 6 0 0 1 6 6c0 3-2 5-3 6H9c-1-1-3-3-3-6a6 6 0 0 1 6-6z"/>
+            </svg>
+          </div>
+          <p class="tip-promo-title">Pro Tip</p>
+          <p class="tip-promo-text">Register for your exam at least 6–8 weeks in advance to secure your preferred test centre. Many slots fill up quickly, especially for IELTS and TOEFL.</p>
+        </div>
+      </div>
+
+      <!-- ── RIGHT PANEL ── -->
+      <div class="exam-right-panel">
+
+        <!-- Exam Banner -->
+        <div class="exam-banner" id="examBanner">
+          <div class="exam-banner-inner">
+            <div class="exam-banner-emoji" id="bannerEmoji"></div>
+            <div class="exam-banner-info">
+              <div class="exam-banner-title" id="bannerTitle"></div>
+              <div class="exam-banner-sub" id="bannerSub"></div>
+              <div class="exam-tags" id="bannerTags"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="exam-tabs">
+          <button class="etab-btn active" data-tab="overview">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Overview
+          </button>
+          <button class="etab-btn" data-tab="format">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Format
+          </button>
+          <button class="etab-btn" data-tab="prep">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Preparation
+          </button>
+          <button class="etab-btn" data-tab="dates">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Exam Dates
+          </button>
+        </div>
+
+        <!-- Tab Panes -->
+        <div class="etab-pane active" id="pane-overview"></div>
+        <div class="etab-pane" id="pane-format"></div>
+        <div class="etab-pane" id="pane-prep"></div>
+        <div class="etab-pane" id="pane-dates"></div>
+
+      </div>
+    </div>
+  </div><!-- /content -->
+</div><!-- /main -->
+
+<script>
+/* ════════════════════════════════════════
+   EXAM DATA
+════════════════════════════════════════ */
+const exams = {
+  IELTS: {
+    fullName: "International English Language Testing System",
+    color: "#4f46e5", bgColor: "#eef2ff",
+    totalScore: "Band 0–9", registrationFee: "~$215–$270", validity: "2 years",
+    overview: "IELTS is the world's most popular English proficiency test for higher education and global migration. Accepted by over 10,000 organisations in 140+ countries, it tests Listening, Reading, Writing, and Speaking skills through real-life scenarios.",
+    commonRequirements: { "Undergraduate": "6.0", "Postgraduate": "6.5", "Top Universities": "7.0", "Elite Programs": "7.5" },
+    format: [
+      { section: "Listening", duration: "30 min", score: "Band 0–9" },
+      { section: "Reading", duration: "60 min", score: "Band 0–9" },
+      { section: "Writing", duration: "60 min", score: "Band 0–9" },
+      { section: "Speaking", duration: "11–14 min", score: "Band 0–9" }
+    ],
+    prepResources: [
+      { name: "IELTS Official Practice", type: "Official", link: "https://www.ielts.org" },
+      { name: "British Council Prep", type: "Website", link: "https://www.britishcouncil.org" },
+      { name: "Cambridge IELTS Books", type: "Book", link: "https://www.cambridge.org" }
+    ],
+    tips: [
+      "Practice listening to a variety of English accents daily.",
+      "Read academic articles to build vocabulary for the Reading section.",
+      "Write at least one Task 1 and one Task 2 essay per week.",
+      "Record yourself speaking and review for fluency and coherence."
+    ],
+    upcomingDates: ["May 10, 2025", "May 24, 2025", "Jun 7, 2025", "Jun 21, 2025"]
+  },
+  TOEFL: {
+    fullName: "Test of English as a Foreign Language",
+    color: "#0891b2", bgColor: "#ecfeff",
+    totalScore: "0–120", registrationFee: "~$205–$260", validity: "2 years",
+    overview: "TOEFL iBT is the most widely accepted English test for North American universities. It measures academic English across Reading, Listening, Speaking, and Writing in an integrated format that mirrors real university tasks.",
+    commonRequirements: { "Undergraduate": "72", "Postgraduate": "90", "Top Universities": "100", "Elite Programs": "110" },
+    format: [
+      { section: "Reading", duration: "54–72 min", score: "0–30" },
+      { section: "Listening", duration: "41–57 min", score: "0–30" },
+      { section: "Speaking", duration: "17 min", score: "0–30" },
+      { section: "Writing", duration: "50 min", score: "0–30" }
+    ],
+    prepResources: [
+      { name: "ETS Official TOEFL Prep", type: "Official", link: "https://www.ets.org/toefl" },
+      { name: "Magoosh TOEFL", type: "Course", link: "https://magoosh.com/toefl" },
+      { name: "TOEFL Official Guide", type: "Book", link: "https://www.ets.org" }
+    ],
+    tips: [
+      "Use note-taking strategies during Listening and integrated tasks.",
+      "Practice typing quickly and accurately for the Writing section.",
+      "Familiarise yourself with integrated speaking and writing tasks.",
+      "Take full-length timed practice tests to build stamina."
+    ],
+    upcomingDates: ["May 3, 2025", "May 17, 2025", "Jun 1, 2025", "Jun 14, 2025"]
+  },
+  SAT: {
+    fullName: "Scholastic Assessment Test",
+    color: "#dc2626", bgColor: "#fef2f2",
+    totalScore: "400–1600", registrationFee: "~$60–$103", validity: "No expiry (5 yrs rec.)",
+    overview: "The SAT is the primary college admission exam in the United States. It evaluates evidence-based reading, writing, and mathematics skills that are essential for college readiness and success.",
+    commonRequirements: { "Community College": "900+", "State University": "1100+", "Top University": "1350+", "Ivy League": "1500+" },
+    format: [
+      { section: "Reading & Writing (Module 1)", duration: "32 min", score: "200–800" },
+      { section: "Reading & Writing (Module 2)", duration: "32 min", score: "200–800" },
+      { section: "Math (Module 1)", duration: "35 min", score: "200–800" },
+      { section: "Math (Module 2)", duration: "35 min", score: "200–800" }
+    ],
+    prepResources: [
+      { name: "Khan Academy SAT Prep", type: "Free Course", link: "https://www.khanacademy.org/sat" },
+      { name: "College Board Official Prep", type: "Official", link: "https://www.collegeboard.org" },
+      { name: "Princeton Review SAT", type: "Book", link: "https://www.princetonreview.com" }
+    ],
+    tips: [
+      "Use Khan Academy's personalised SAT practice linked with PSAT scores.",
+      "Focus on process of elimination for difficult Reading questions.",
+      "Memorise key math formulas — the test provides some but not all.",
+      "Practice digital SAT on Bluebook app for test day familiarity."
+    ],
+    upcomingDates: ["May 3, 2025", "Jun 7, 2025", "Aug 23, 2025", "Oct 4, 2025"]
+  },
+  HSK: {
+    fullName: "Hànyǔ Shuǐpíng Kǎoshì (Chinese Proficiency Test)",
+    color: "#b91c1c", bgColor: "#fff1f2",
+    totalScore: "HSK 1–6 (300 pts each)", registrationFee: "~$30–$90 (by level)", validity: "Lifetime",
+    overview: "HSK is the official Chinese government standardised test of Mandarin Chinese proficiency for non-native speakers. It has six levels (HSK 1–6) aligned with the CEFR, with HSK 6 representing near-native command of Mandarin.",
+    commonRequirements: { "Basic Communication": "HSK 2", "University Admission": "HSK 4", "Graduate Programs": "HSK 5", "Fluent Proficiency": "HSK 6" },
+    format: [
+      { section: "Listening", duration: "Varies by level", score: "0–100" },
+      { section: "Reading", duration: "Varies by level", score: "0–100" },
+      { section: "Writing", duration: "Varies by level", score: "0–100" }
+    ],
+    prepResources: [
+      { name: "Hanban Official HSK", type: "Official", link: "http://www.chinesetest.cn" },
+      { name: "HSK Online Practice", type: "Website", link: "https://www.hskonline.com" },
+      { name: "Pleco Dictionary App", type: "App", link: "https://www.pleco.com" }
+    ],
+    tips: [
+      "Build a daily habit of writing Chinese characters by hand.",
+      "Use spaced repetition apps like Anki for vocabulary retention.",
+      "Watch Chinese TV dramas to improve listening comprehension.",
+      "Start with past HSK papers to understand the exact format."
+    ],
+    upcomingDates: ["Apr 27, 2025", "May 25, 2025", "Jun 22, 2025", "Aug 24, 2025"]
+  },
+  TOPIK: {
+    fullName: "Test of Proficiency in Korean",
+    color: "#0369a1", bgColor: "#f0f9ff",
+    totalScore: "TOPIK I (200) / TOPIK II (300)", registrationFee: "~$40–$65", validity: "2 years",
+    overview: "TOPIK is the official Korean language proficiency exam offered by NIIED. It is required for admission to Korean universities and for employment in Korea. Six levels span from beginner to advanced.",
+    commonRequirements: { "Basic Admission": "TOPIK I (Lv.2)", "Undergraduate": "TOPIK II (Lv.3)", "Postgraduate": "TOPIK II (Lv.4)", "Professional": "TOPIK II (Lv.5–6)" },
+    format: [
+      { section: "TOPIK I – Listening", duration: "40 min", score: "0–100" },
+      { section: "TOPIK I – Reading",   duration: "60 min", score: "0–100" },
+      { section: "TOPIK II – Listening", duration: "60 min", score: "0–100" },
+      { section: "TOPIK II – Writing",  duration: "50 min", score: "0–100" }
+    ],
+    prepResources: [
+      { name: "TOPIK Official Website", type: "Official", link: "https://www.topik.go.kr" },
+      { name: "Talk To Me In Korean", type: "Course", link: "https://talktomeinkorean.com" },
+      { name: "TOPIK GUIDE", type: "Website", link: "https://www.topikguide.com" }
+    ],
+    tips: [
+      "Listen to Korean news and podcasts to sharpen listening skills.",
+      "Practice reading Korean newspaper articles for TOPIK II Reading.",
+      "Learn grammar patterns systematically by level (TOPIK 1–6).",
+      "Time yourself with past papers to manage the exam pace."
+    ],
+    upcomingDates: ["Apr 12, 2025", "May 25, 2025", "Jul 20, 2025", "Oct 19, 2025"]
+  }
+};
+
+const examEmojis = { IELTS:"🇬🇧", TOEFL:"🇺🇸", SAT:"📐", HSK:"🇨🇳", TOPIK:"🇰🇷" };
+const examDescs = {
+  IELTS: "English — UK, Australia & worldwide",
+  TOEFL: "English — US & Canada universities",
+  SAT:   "US college admission test",
+  HSK:   "Chinese language proficiency",
+  TOPIK: "Korean language proficiency"
+};
+const examOrder = ["IELTS","TOEFL","SAT","HSK","TOPIK"];
+let activeExam = "IELTS";
+
+/* ── SVG util ── */
+function svg(path, size=16) {
+  return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${path}</svg>`;
+}
+const icons = {
+  target: svg('<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>'),
+  clock:  svg('<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>'),
+  dollar: svg('<line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>'),
+  globe:  svg('<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>'),
+  bulb:   svg('<line x1="9" y1="21" x2="15" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M12 3a6 6 0 0 1 6 6c0 3-2 5-3 6H9c-1-1-3-3-3-6a6 6 0 0 1 6-6z"/>'),
+  book:   svg('<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>'),
+  cal:    svg('<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>'),
+  file:   svg('<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>'),
+  star:   svg('<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>'),
+  check:  `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`,
+  ext:    svg('<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>'),
+  chev:   svg('<polyline points="9 18 15 12 9 6"/>'),
+};
+
+/* ── Exam List ── */
+function buildExamList() {
+  document.getElementById("examList").innerHTML = examOrder.map(key => {
+    const e = exams[key]; const a = key === activeExam;
+    return `
+      <button class="exam-btn${a ? " active" : ""}" onclick="selectExam('${key}')" id="ebtn-${key}">
+        <div class="exam-icon-wrap" style="background:${e.bgColor}">${examEmojis[key]}</div>
+        <div class="exam-btn-text">
+          <div class="exam-btn-name">${key}</div>
+          <div class="exam-btn-desc">${examDescs[key]}</div>
+        </div>
+        ${a ? `<span class="exam-chev" style="color:${e.color}">${icons.chev}</span>` : ""}
+      </button>`;
+  }).join("");
+}
+
+/* ── Quick Facts ── */
+function buildQuickFacts() {
+  const e = exams[activeExam];
+  document.getElementById("quickFacts").innerHTML = [
+    { label:"Total Score", value: e.totalScore, icon: icons.target },
+    { label:"Registration Fee", value: e.registrationFee, icon: icons.dollar },
+    { label:"Validity", value: e.validity, icon: icons.clock }
+  ].map(({ label, value, icon }) => `
+    <div class="fact-item">
+      <div class="fact-icon-wrap" style="background:${e.bgColor}">
+        <span style="color:${e.color}">${icon}</span>
+      </div>
+      <div>
+        <div class="fact-label">${label}</div>
+        <div class="fact-value">${value}</div>
+      </div>
+    </div>`).join("");
+}
+
+/* ── Banner ── */
+function buildBanner() {
+  const e = exams[activeExam];
+  const banner = document.getElementById("examBanner");
+  banner.style.backgroundColor = e.bgColor;
+  banner.style.borderColor = e.color + "30";
+  document.getElementById("bannerEmoji").textContent = examEmojis[activeExam];
+  document.getElementById("bannerTitle").textContent = activeExam;
+  document.getElementById("bannerSub").textContent = e.fullName;
+  document.getElementById("bannerTags").innerHTML = [
+    { text: e.totalScore, primary: true },
+    { text: `Valid: ${e.validity}`, primary: false },
+    { text: `Fee: ${e.registrationFee}`, primary: false }
+  ].map(t => `<span class="exam-tag" style="color:${t.primary ? e.color : "#475569"}">${t.text}</span>`).join("");
+}
+
+/* ── Overview Tab ── */
+function buildOverview() {
+  const e = exams[activeExam];
+  function barPct(score) {
+    if (activeExam === "IELTS") return Math.min((parseFloat(score)/9)*100, 100);
+    if (activeExam === "TOEFL") return Math.min((parseFloat(score)/120)*100, 100);
+    if (activeExam === "SAT")   return Math.min((parseFloat(score.replace("+",""))/1600)*100, 100);
+    return 70;
+  }
+  document.getElementById("pane-overview").innerHTML = `
+    <div class="inner-card">
+      <div class="inner-card-title"><span style="color:#6366f1">${icons.globe}</span> About ${activeExam}</div>
+      <p class="overview-text">${e.overview}</p>
+    </div>
+    <div class="inner-card">
+      <div class="inner-card-title"><span style="color:#a855f7">${icons.target}</span> Score Requirements</div>
+      ${Object.entries(e.commonRequirements).map(([lvl, sc]) => `
+        <div class="score-row">
+          <div class="score-meta">
+            <span class="score-label">${lvl}</span>
+            <span class="score-val" style="color:${e.color}">${sc}</span>
+          </div>
+          <div class="score-bar-bg">
+            <div class="score-bar-fill" style="background:${e.color};width:${barPct(sc)}%"></div>
+          </div>
+        </div>`).join("")}
+    </div>
+    <div class="inner-card">
+      <div class="inner-card-title"><span style="color:#d97706">${icons.bulb}</span> Study Tips</div>
+      <ul class="tips-list">
+        ${e.tips.map((t,i) => `
+          <li class="tip-item">
+            <div class="tip-num" style="background:${e.bgColor};color:${e.color}">${i+1}</div>
+            <span class="tip-text">${t}</span>
+          </li>`).join("")}
+      </ul>
+    </div>`;
+}
+
+/* ── Format Tab ── */
+function buildFormat() {
+  const e = exams[activeExam];
+  document.getElementById("pane-format").innerHTML = `
+    <div class="inner-card">
+      <div class="inner-card-title"><span style="color:#6366f1">${icons.file}</span> Test Format</div>
+      ${e.format.map((s,i) => `
+        <div class="format-row">
+          <div class="format-num" style="background:${e.bgColor};color:${e.color}">${i+1}</div>
+          <div class="format-info">
+            <div class="format-section-name">${s.section}</div>
+            <div class="format-duration">${icons.clock} ${s.duration}</div>
+          </div>
+          <div class="format-score-badge" style="background:${e.bgColor};color:${e.color}">${s.score}</div>
+        </div>`).join("")}
+      <div class="total-score-banner" style="border-color:${e.color}50;background:${e.bgColor}">
+        <span style="color:${e.color}">${icons.star}</span>
+        <div>
+          <div class="total-score-label">Total Score</div>
+          <div class="total-score-val" style="color:${e.color}">${e.totalScore}</div>
+        </div>
+      </div>
+    </div>`;
+}
+
+/* ── Prep Tab ── */
+function buildPrep() {
+  const e = exams[activeExam];
+  document.getElementById("pane-prep").innerHTML = `
+    <div class="inner-card">
+      <div class="inner-card-title"><span style="color:#6366f1">${icons.book}</span> Preparation Resources</div>
+      ${e.prepResources.map(r => `
+        <div class="resource-row">
+          <div class="resource-icon-wrap" style="background:${e.bgColor}">
+            <span style="color:${e.color}">${icons.book}</span>
+          </div>
+          <div class="resource-info">
+            <div class="resource-name">${r.name}</div>
+            <span class="resource-type-badge">${r.type}</span>
+          </div>
+          <a class="resource-link" href="${r.link}" target="_blank" rel="noopener">${icons.ext} Open</a>
+        </div>`).join("")}
+    </div>
+    <div class="inner-card">
+      <div class="inner-card-title"><span style="color:#d97706">${icons.bulb}</span> Top Study Tips</div>
+      <div class="tips-grid">
+        ${e.tips.map(tip => `
+          <div class="tip-card">
+            ${icons.check}
+            <p class="tip-card-text">${tip}</p>
+          </div>`).join("")}
+      </div>
+    </div>`;
+}
+
+/* ── Dates Tab ── */
+function buildDates() {
+  const e = exams[activeExam];
+  document.getElementById("pane-dates").innerHTML = `
+    <div class="inner-card">
+      <div class="inner-card-title"><span style="color:#ef4444">${icons.cal}</span> Upcoming ${activeExam} Exam Dates</div>
+      ${e.upcomingDates.map((d, i) => {
+        const parts = d.split(",")[0].split(" ");
+        return `
+        <div class="date-row">
+          <div class="date-box" style="background:${e.bgColor}">
+            <span class="date-day" style="color:${e.color}">${parts[1]}</span>
+            <span class="date-month" style="color:${e.color}aa">${parts[0]}</span>
+          </div>
+          <div class="date-info">
+            <div class="date-label">${d}</div>
+            <div class="date-sub">${i===0 ? "Next available date" : `Exam session ${i+1}`}</div>
+          </div>
+          ${i===0 ? '<span class="badge-upcoming">Upcoming</span>' : ""}
+        </div>`;
+      }).join("")}
+      <div class="reg-tip-box">
+        <span style="color:#d97706;flex-shrink:0">${icons.bulb}</span>
+        <div>
+          <div class="reg-tip-title">Registration Tip</div>
+          <p class="reg-tip-text">Register at least 4–6 weeks before your exam date to secure your preferred test centre and time slot. Fees are non-refundable after registration.</p>
+        </div>
+      </div>
+    </div>`;
+}
+
+/* ── Select exam ── */
+function selectExam(key) {
+  activeExam = key;
+  buildExamList(); buildQuickFacts(); buildBanner();
+  buildOverview(); buildFormat(); buildPrep(); buildDates();
+  setTab("overview");
+}
+
+/* ── Tab switching ── */
+function setTab(tab) {
+  document.querySelectorAll(".etab-btn").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
+  document.querySelectorAll(".etab-pane").forEach(p => p.classList.toggle("active", p.id === "pane-" + tab));
+}
+document.querySelectorAll(".etab-btn").forEach(btn => {
+  btn.addEventListener("click", () => setTab(btn.dataset.tab));
+});
+
+/* ── Init ── */
+selectExam("IELTS");
+</script>
+
+</body>
+</html>
