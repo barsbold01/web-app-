@@ -143,6 +143,9 @@ body {
     height: 20px;
 }
 
+.sign-in-btn:hover { background: #4730c5; }
+
+
 /* ── MAIN CONTENT ── */
 .main {
   margin-left: 240px;
