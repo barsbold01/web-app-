@@ -149,7 +149,7 @@ body {
 /* ── MAIN CONTENT ── */
 .main {
   margin-left: 240px;
-  padding: 28px;
+
   flex: 1;
   max-width: calc(100% - 240px);
 }
