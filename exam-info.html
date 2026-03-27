@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>International Exam Guide</title>
+  <title>Олон улсын шалгалтын гарын авлага</title>
 
   <!-- Gilroy via Fontshare (closest free CDN alternative) — fallback stack -->
   <link rel="preconnect" href="https://api.fontshare.com" />
@@ -619,8 +619,8 @@
 
   <!-- ── Page header ── -->
   <div class="page-header">
-    <h1>International Exam Guide</h1>
-    <p>Everything you need to know about IELTS, TOEFL, SAT, HSK, and TOPIK</p>
+    <h1>Олон улсын шалгалтын гарын авлага</h1>
+    <p>IELTS, TOEFL, SAT, HSK, TOPIK шалгалтуудын талаар мэдэх ёстой бүх зүйл</p>
   </div>
 
   <div class="content-grid">
@@ -629,14 +629,14 @@
     <div class="left-panel">
       <!-- Exam selector -->
       <div class="card">
-        <div class="card-label">Select Exam</div>
+        <div class="card-label">Шалгалт сонгох</div>
         <div class="exam-list" id="examList"></div>
       </div>
 
       <!-- Quick facts -->
       <div class="card" style="margin-top:1rem;">
         <div class="quick-facts">
-          <h4>Quick Facts</h4>
+          <h4>Хурдан мэдээлэл</h4>
           <div id="quickFacts"></div>
         </div>
       </div>
@@ -680,13 +680,13 @@
   ════════════════════════════════════════════ */
   const exams = {
     IELTS: {
-      fullName: "International English Language Testing System",
+      fullName: "Олон улсын англи хэлний шалгалтын систем",
       color: "#4f46e5",
       bgColor: "#eef2ff",
       totalScore: "Band 0–9",
       registrationFee: "~$215–$270",
       validity: "2 years",
-      overview: "IELTS is the world's most popular English proficiency test for higher education and global migration. Accepted by over 10,000 organisations in 140+ countries, it tests Listening, Reading, Writing, and Speaking skills through real-life scenarios.",
+      overview: "IELTS бол дээд боловсрол болон дэлхийн шилжилт хөдөлгөөний чиглэлээр дэлхийд хамгийн алдартай англи хэлний түвшин тогтоох шалгалт юм. 140 гаруй орны 10,000 гаруй байгууллага хүлээн зөвшөөрдөг бөгөөд энэ нь бодит амьдрал дээр үндэслэн сонсох, унших, бичих, ярих чадварыг шалгадаг.",
       commonRequirements: {
         "Undergraduate": "6.0",
         "Postgraduate": "6.5",
@@ -694,32 +694,32 @@
         "Elite Programs": "7.5"
       },
       format: [
-        { section: "Listening", duration: "30 min", score: "Band 0–9" },
-        { section: "Reading", duration: "60 min", score: "Band 0–9" },
-        { section: "Writing", duration: "60 min", score: "Band 0–9" },
-        { section: "Speaking", duration: "11–14 min", score: "Band 0–9" }
+        { section: "Сонсгол", duration: "30 min", score: "Band 0–9" },
+        { section: "Унших", duration: "60 min", score: "Band 0–9" },
+        { section: "Бичих", duration: "60 min", score: "Band 0–9" },
+        { section: "Ярих", duration: "11–14 min", score: "Band 0–9" }
       ],
       prepResources: [
-        { name: "IELTS Official Practice", type: "Official", link: "https://www.ielts.org" },
+        { name: "IELTS-ийн албан ёсны дадлага", type: "Official", link: "https://www.ielts.org" },
         { name: "British Council Prep", type: "Website", link: "https://www.britishcouncil.org" },
         { name: "Cambridge IELTS Books", type: "Book", link: "https://www.cambridge.org" }
       ],
       tips: [
-        "Practice listening to a variety of English accents daily.",
-        "Read academic articles to build vocabulary for the Reading section.",
-        "Write at least one Task 1 and one Task 2 essay per week.",
-        "Record yourself speaking and review for fluency and coherence."
+        "Өдөр бүр янз бүрийн англи аялга сонсох дасгал хий.",
+        "Унших хэсгийн үгсийн санг нэмэгдүүлэхийн тулд эрдэм шинжилгээний өгүүллүүдийг уншина уу.",
+        "Долоо хоногт дор хаяж нэг 1-р даалгавар болон нэг 2-р даалгаврын эссэ бич.",
+        "Өөрийнхөө яриаг бичиж аваад, чөлөөтэй, уялдаа холбоотой эсэхийг шалгаарай."
       ],
       upcomingDates: ["May 10, 2025", "May 24, 2025", "Jun 7, 2025", "Jun 21, 2025"]
     },
     TOEFL: {
-      fullName: "Test of English as a Foreign Language",
+      fullName: "Гадаад хэлний англи хэлний шалгалт",
       color: "#0891b2",
       bgColor: "#ecfeff",
       totalScore: "0–120",
       registrationFee: "~$205–$260",
       validity: "2 years",
-      overview: "TOEFL iBT is the most widely accepted English test for North American universities. It measures academic English across Reading, Listening, Speaking, and Writing in an integrated format that mirrors real university tasks.",
+      overview: "TOEFL iBT ньХойд Америкийн их сургуулиудын хувьд хамгийн өргөнөөр хүлээн зөвшөөрөгдсөн англи хэлний шалгалт юм. Энэ нь академик англи хэлийг унших, сонсох, ярих, бичих гэсэн хэсгүүдээр бодит их сургуулийн даалгавруудыг тусгасан нэгдсэн форматаар хэмждэг.",
       commonRequirements: {
         "Undergraduate": "72",
         "Postgraduate": "90",
@@ -727,10 +727,10 @@
         "Elite Programs": "110"
       },
       format: [
-        { section: "Reading", duration: "54–72 min", score: "0–30" },
-        { section: "Listening", duration: "41–57 min", score: "0–30" },
-        { section: "Speaking", duration: "17 min", score: "0–30" },
-        { section: "Writing", duration: "50 min", score: "0–30" }
+        { section: "Унших", duration: "54–72 min", score: "0–30" },
+        { section: "Сонсгол", duration: "41–57 min", score: "0–30" },
+        { section: "Ярих", duration: "17 min", score: "0–30" },
+        { section: "Бичих", duration: "50 min", score: "0–30" }
       ],
       prepResources: [
         { name: "ETS Official TOEFL Prep", type: "Official", link: "https://www.ets.org/toefl" },
@@ -738,10 +738,10 @@
         { name: "TOEFL Official Guide", type: "Book", link: "https://www.ets.org" }
       ],
       tips: [
-        "Use note-taking strategies during Listening and integrated tasks.",
-        "Practice typing quickly and accurately for the Writing section.",
-        "Familiarise yourself with integrated speaking and writing tasks.",
-        "Take full-length timed practice tests to build stamina."
+        "Сонсох болон нэгтгэсэн даалгавруудын үеэр тэмдэглэл хөтлөх стратеги ашиглаарай.",
+        "Бичих хэсэгт хурдан болон нарийвчлан бичих дасгал хий.",
+        "Нэгтгэсэн яриа болон бичих даалгавруудтай танилц.",
+        "Бүтэн урттай цагийн дасгалын шалгалтыг авахаар оролдоорой."
       ],
       upcomingDates: ["May 3, 2025", "May 17, 2025", "Jun 1, 2025", "Jun 14, 2025"]
     },
@@ -752,7 +752,7 @@
       totalScore: "400–1600",
       registrationFee: "~$60–$103",
       validity: "No expiry (5 years recommended)",
-      overview: "The SAT is the primary college admission exam in the United States. It evaluates evidence-based reading, writing, and mathematics skills that are essential for college readiness and success.",
+      overview: "SAT нь АНУ-ын коллежийн элсэлтийн анхан шатны шалгалт юм. Энэ нь коллежид бэлэн байх, амжилтанд хүрэхэд зайлшгүй шаардлагатай нотолгоонд суурилсан унших, бичих, математикийн чадварыг үнэлдэг.",
       commonRequirements: {
         "Community College": "900+",
         "State University": "1100+",
@@ -760,8 +760,8 @@
         "Ivy League": "1500+"
       },
       format: [
-        { section: "Reading & Writing (Module 1)", duration: "32 min", score: "200–800" },
-        { section: "Reading & Writing (Module 2)", duration: "32 min", score: "200–800" },
+        { section: "Унших & Бичих (Module 1)", duration: "32 min", score: "200–800" },
+        { section: "Унших & Бичих (Module 2)", duration: "32 min", score: "200–800" },
         { section: "Math (Module 1)", duration: "35 min", score: "200–800" },
         { section: "Math (Module 2)", duration: "35 min", score: "200–800" }
       ],
@@ -771,10 +771,10 @@
         { name: "Princeton Review SAT", type: "Book", link: "https://www.princetonreview.com" }
       ],
       tips: [
-        "Use Khan Academy's personalised SAT practice linked with PSAT scores.",
-        "Focus on process of elimination for difficult Reading questions.",
-        "Memorise key math formulas — the test provides some but not all.",
-        "Practice digital SAT on Bluebook app for test day familiarity."
+        "Khan Academy-ийн хувийн SAT дасгалыг PSAT онооны хамт ашигла.",
+        "Хэцүү унших асуултанд урьдчилан сонгох процессыг тодорхойло.",
+        "Тест нь зарим боловч бүхээ өгөхгүй тул үндсэн математикийн формулыг сануул.",
+        "Test day-д оролцохын тулд Bluebook апп дээр digital SAT дасгал хий."
       ],
       upcomingDates: ["May 3, 2025", "Jun 7, 2025", "Aug 23, 2025", "Oct 4, 2025"]
     },
@@ -785,7 +785,7 @@
       totalScore: "HSK 1–6 (300 pts each)",
       registrationFee: "~$30–$90 (varies by level)",
       validity: "Lifetime",
-      overview: "HSK is the official Chinese government standardised test of Mandarin Chinese proficiency for non-native speakers. It has six levels (HSK 1–6) aligned with the CEFR, with HSK 6 representing near-native command of Mandarin.",
+      overview: "HSK нь Хятадын засгийн газрын албан ёсны стандартчилсан шалгалт бөгөөд Хятад хэлний төрөлх хэл биш хүмүүст зориулсан Хятад хэлний түвшин тогтоох шалгалт юм. Энэ нь CEFR-тэй нийцсэн зургаан түвшинтэй (HSK 1-6) бөгөөд HSK 6 нь Хятад хэлний төрөлх хэлний чадварын түвшинг илэрхийлдэг.",
       commonRequirements: {
         "Basic Communication": "HSK 2",
         "University Admission": "HSK 4",
@@ -793,9 +793,9 @@
         "Fluent Proficiency": "HSK 6"
       },
       format: [
-        { section: "Listening", duration: "Varies by level", score: "0–100" },
-        { section: "Reading", duration: "Varies by level", score: "0–100" },
-        { section: "Writing", duration: "Varies by level", score: "0–100" }
+        { section: "Сонсох", duration: "Level-ийн хамааралтай", score: "0–100" },
+        { section: "Унших", duration: "Level-ийн хамааралтай", score: "0–100" },
+        { section: "Бичих", duration: "Level-ийн хамааралтай", score: "0–100" }
       ],
       prepResources: [
         { name: "Hanban Official HSK", type: "Official", link: "http://www.chinesetest.cn" },
@@ -803,10 +803,10 @@
         { name: "Pleco Dictionary App", type: "App", link: "https://www.pleco.com" }
       ],
       tips: [
-        "Build a daily habit of writing Chinese characters by hand.",
-        "Use spaced repetition apps like Anki for vocabulary retention.",
-        "Watch Chinese TV dramas to improve listening comprehension.",
-        "Start with past HSK papers to understand the exact format."
+        "Хятад ханзыг гараар бичих өдөр тутмын зуршлыг бий болго.",
+        "Үгийн санг хадгалахын тулд Anki гэх мэт зайтай давталтын аппликейшнуудыг ашиглаарай.",
+        "Сонсох чадвараа сайжруулахын тулд Хятадын телевизийн олон ангит кино үзээрэй.",
+        "Яг тодорхой форматыг ойлгохын тулд өмнөх HSK шалгалтын материалуудаас эхэл."
       ],
       upcomingDates: ["Apr 27, 2025", "May 25, 2025", "Jun 22, 2025", "Aug 24, 2025"]
     },
@@ -817,7 +817,7 @@
       totalScore: "TOPIK I (200) / TOPIK II (300)",
       registrationFee: "~$40–$65",
       validity: "2 years",
-      overview: "TOPIK is the official Korean language proficiency exam offered by the National Institute for International Education (NIIED). It is required for admission to Korean universities and for employment in Korea. Six levels span from beginner to advanced.",
+      overview: "TOPIK нь Хангын албан ёсны стандартчилсан хэлний чадварын шалгалт бөгөөд Нийгэмлэгийн олон улсын боловсролын институт (NIIED) -аас олгодог. Энэ нь Хангын университет руу орох болон Хангын дотоод ажиллагаанд шаардлагатай. Ганц түвшин нь эхний доод түвшнаас хамгийн өндөр түвшинг хүртэл хамрах болно.",
       commonRequirements: {
         "Basic Admission": "TOPIK I (Level 2)",
         "Undergraduate": "TOPIK II (Level 3)",
@@ -836,10 +836,10 @@
         { name: "TOPIK GUIDE", type: "Website", link: "https://www.topikguide.com" }
       ],
       tips: [
-        "Listen to Korean news and podcasts to sharpen listening skills.",
-        "Practice reading Korean newspaper articles for TOPIK II Reading.",
-        "Learn grammar patterns systematically by level (TOPIK 1–6).",
-        "Time yourself with past papers to manage the exam pace."
+        "Сонсох чадвараа сайжруулахын тулд Солонгос мэдээ, подкаст сонсоорой.",
+        "TOPIK II Уншлагын Солонгос сонины нийтлэлийг унших дадлага хий.",
+        "Дүрмийн хэв маягийг түвшин тус бүрээр нь системтэйгээр сурах (TOPIK 1–6).",
+        "Шалгалтын хурдыг хянахын тулд өмнөх шалгалтын материалууддаа цаг гаргаарай."
       ],
       upcomingDates: ["Apr 12, 2025", "May 25, 2025", "Jul 20, 2025", "Oct 19, 2025"]
     }
@@ -847,11 +847,11 @@
 
   const examIcons = { IELTS:"🇬🇧", TOEFL:"🇺🇸", SAT:"📐", HSK:"🇨🇳", TOPIK:"🇰🇷" };
   const examDescriptions = {
-    IELTS: "English for UK, Australia & worldwide",
-    TOEFL: "English for US & Canada universities",
-    SAT: "US college admission test",
-    HSK: "Chinese language proficiency",
-    TOPIK: "Korean language proficiency"
+    IELTS: "Их Британи, Австрали болон дэлхий даяарх англи хэл",
+    TOEFL: "АНУ болон Канадын их сургуулиудад зориулсан англи хэл",
+    SAT: "АНУ-ын коллежийн элсэлтийн шалгалт",
+    HSK: "Хятадын хэлний чадвар",
+    TOPIK: "Солонгосын хэлний чадвар"
   };
   const examList = ["IELTS","TOEFL","SAT","HSK","TOPIK"];
 
@@ -974,7 +974,7 @@
         <ul class="tips-list">
           ${e.tips.map((tip, i) => `
             <li class="tip-item">
-              <div class="tip-num" style="background:${e.bgColor};color:${e.color}">${i+1}</div>
+              <div class="tip-num" style="background:${e.bgColor};coStart with past HSK papers to understand the exact format.lor:${e.color}">${i+1}</div>
               <span class="tip-text">${tip}</span>
             </li>`).join("")}
         </ul>
