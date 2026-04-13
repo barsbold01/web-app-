@@ -1,380 +1,373 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StudyAbroadHub — Таны Мөрөөдлийн Их Сургууль Энд Эхэлнэ</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Дараагийн Алхам – Гадаадад Суралцах Платформ</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
-<!-- НАВИГАЦИ -->
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="logo">
-      <div class="logo-icon">
-        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/>
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
-        </svg>
+<!-- ═══════════════════════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-box">
+        <svg class="icon icon-24" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 6.67 1.67 10 0v-5"/></svg>
       </div>
-      <span class="logo-text">StudyAbroad<span>Hub</span></span>
+      <span class="nav__brand">NEXT STEPS</span>
     </a>
-
-    <div class="nav-links">
-      <a href="universities.html">Их сургуулиуд</a>
-      <a href="scholarships.html">Тэтгэлэгүүд</a>
-      <a href="exams.html">Шалгалтууд</a>
-      <a href="guide.html">Элсэлтийн гарын авлага</a>
+    <div class="nav__links">
+      <a href="uni.html" class="nav__link">Их Сургуулиуд</a>
+      <a href="scholar.html" class="nav__link">Тэтгэлгүүд</a>
+      <a href="exam-info.html" class="nav__link">Шалгалтууд</a>
     </div>
-
-    <div class="nav-cta">
-      <a href="auth.html" class="btn btn-ghost">Нэвтрэх</a>
-      <a href="auth.html" class="btn btn-primary">Эхлэх</a>
-    </div>
+    <a href="auth.html" class="nav__cta">SIGN UP</a>
   </div>
 </nav>
-   
-<!-- ГЕРОЙ -->
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════════════ -->
 <section class="hero">
-  <div class="hero-blob-1" aria-hidden="true"></div>
-  <div class="hero-blob-2" aria-hidden="true"></div>
-  <div class="hero-inner">
-    <div class="hero-left">
-      <div class="hero-badge">
-        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
-        </svg>
-        <span>Монгол оюутнуудад зориулсан #1 гадаадад суралцах платформ</span>
-      </div>
-      <h1 class="hero-title">
-        Таны Мөрөөдлийн<br>
-        <span class="gradient-text">Их Сургууль Энд Эхэлнэ</span>
-      </h1>
-      <p class="hero-desc">
-        Их сургуулиуд, тэтгэлэг, шалгалтын материалыг нэг дор олоорой.
-        Дэлхийг байлдан дагуулахад бэлэн 12-р ангийн сурагчдад зориулав.
-      </p>
-      <div class="hero-search">
-        <div class="search-icon">
-          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-          </svg>
-        </div>
-        <input type="text" placeholder="Их сургууль, тэтгэлэг хайх..." />
-        <button type="button">Хайх</button>
-      </div>
+  <div class="hero__inner">
+    <h1 class="hero__title">
+      Дэлхийн Шилдэг Их Сургуулиудад<br>Хүрэх Зам Энд Эхэлнэ
+    </h1>
+    <p class="hero__sub">
+      Next Step нь оюутнуудад гадаадад суралцах аяллыг зөв хэрэгсэл,
+      мэдээлэл, зөвлөгөөгөөр нэг дороос удирдан чиглүүлдэг.
+    </p>
+    <div class="hero__actions">
+      <a href="dashboard.html" class="btn-lime">
+        ЭХЛЭХ
+        <svg class="icon icon-20" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="" class="btn-outline-white">ДЭЛГЭРЭНГҮЙ</a>
     </div>
+    <div class="hero__globe">
+      <svg class="icon icon-128" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="2" y1="12" x2="22" y2="12"/>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+      </svg>
+    </div>
+  </div>
+</section>
 
-    <div class="hero-right" aria-hidden="true">
-      <div class="hero-card-stack">
-        <div class="uni-card">
-          <div class="uni-card-header">
-            <div class="uni-avatar ua-blue">🏫</div>
-            <div>
-              <div class="uni-card-name">Токиогийн Их Сургууль</div>
-              <div class="uni-card-sub">Токио, Япон 🇯🇵</div>
-            </div>
-          </div>
-          <span class="uni-badge badge-green">MEXT Тэтгэлэг</span>
-        </div>
-        <div class="uni-card">
-          <div class="uni-card-header">
-            <div class="uni-avatar ua-purple">🎓</div>
-            <div>
-              <div class="uni-card-name">NUS Сингапур</div>
-              <div class="uni-card-sub">Сингапур 🇸🇬</div>
-            </div>
-          </div>
-          <span class="uni-badge badge-indigo">ASEAN Тэтгэлэг</span>
-        </div>
-        <div class="uni-card">
-          <div class="uni-card-header">
-            <div class="uni-avatar ua-amber">⭐</div>
-            <div>
-              <div class="uni-card-name">Оксфордын Их Сургууль</div>
-              <div class="uni-card-sub">Оксфорд, Их Британи 🇬🇧</div>
-            </div>
-          </div>
-          <span class="uni-badge badge-amber">Хугацаа: 10-р сарын 15</span>
-        </div>
+<!-- ═══════════════════════════════════════════════════════════
+     UNIVERSITY LOGOS
+══════════════════════════════════════════════════════════════ -->
+<section class="uni-logos" id="universities">
+  <div class="wrap">
+    <p class="uni-logos__title">ДЭЛХИЙН ШИЛДЭГ ИХ СУРГУУЛИУДЫН ОЮУТНУУД</p>
+    <div class="uni-logos__grid">
+      <div class="uni-logo-item"><div class="uni-logo-badge bg-red-600"><span>MIT</span></div></div>
+      <div class="uni-logo-item"><div class="uni-logo-badge bg-blue-900"><span>OXFORD</span></div></div>
+      <div class="uni-logo-item"><div class="uni-logo-badge bg-orange-600"><span>NUS</span></div></div>
+      <div class="uni-logo-item"><div class="uni-logo-badge bg-red-700"><span>TOKYO</span></div></div>
+      <div class="uni-logo-item"><div class="uni-logo-badge bg-blue-700"><span>SEOUL</span></div></div>
+      <div class="uni-logo-item"><div class="uni-logo-badge bg-green-800"><span>CAMBRIDGE</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     WHO WE ARE
+══════════════════════════════════════════════════════════════ -->
+<section class="who">
+  <div class="wrap">
+    <span class="sec-lbl">БИД ХЭН БЭ</span>
+    <div class="who__grid">
+      <div class="who__heading-col">
+        <h2 class="who__heading">Оюутнуудыг<br>Алхам Бүрт Удирдана</h2>
+      </div>
+      <div class="who__body">
+        <p>Бид оюутнуудыг коллежид элсэх өргөдлийн бүх үе шатаар дамжуулан удирдахаар бүтээгдсэн платформ юм.
+        Хүчтэй портфолио бүрдүүлэхээс эхлээд өргөн цар хүрээтэй эссэ бичих хүртэл,
+        бид оюутнуудад дэлхийн их сургуулиудад итгэлтэйгээр өргөдөл гаргахад шаардлагатай
+        хэрэгсэл, зөвлөмж, нөөцийг хангадаг.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- СТАТИСТИК -->
-<div class="stats-bar">
-  <div class="stats-inner">
-    <div class="stat-item">
-      <div class="stat-icon">
-        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/>
-        </svg>
-      </div>
-      <div>
-        <div class="stat-value">500+</div>
-        <div class="stat-label">Их сургуулиуд</div>
-      </div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-icon">
-        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-        </svg>
-      </div>
-      <div>
-        <div class="stat-value">200+</div>
-        <div class="stat-label">Тэтгэлэгүүд</div>
-      </div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-icon">
-        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="10"/>
-          <path stroke-linecap="round" stroke-linejoin="round" d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-        </svg>
-      </div>
-      <div>
-        <div class="stat-value">50+</div>
-        <div class="stat-label">Улс орнууд</div>
-      </div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-icon">
-        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
-        </svg>
-      </div>
-      <div>
-        <div class="stat-value">10К+</div>
-        <div class="stat-label">Тусалсан оюутнууд</div>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- ═══════════════════════════════════════════════════════════
+     PROBLEMS
+══════════════════════════════════════════════════════════════ -->
+<section class="problems">
+  <div class="wrap">
+    <span class="sec-lbl">ТАНЫ ТУЛГАРДАГ АСУУДЛУУД</span>
+    <div class="problems__grid">
 
-<!-- БОЛОМЖУУД -->
-<section class="features-bg">
-  <div class="section-inner">
-    <div class="section-head">
-      <h2>Гадаадад Суралцахад Хэрэгтэй Бүгд</h2>
-      <p>Мөрөөдлийн их сургуулиасаа хайлт хийснээс эхлэн өргөдөл бэлтгэх хүртэл — бид бүгдийг хангасан.</p>
-    </div>
-    <div class="features-grid">
-      <a href="universities.html" class="feature-card">
-        <div class="feature-icon fi-indigo">
-          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-          </svg>
-        </div>
-        <h3>Их Сургуулийн Хайлт</h3>
-        <p>Дэлхий даяар 500 гаруй их сургуулиас хайлт хийгээрэй. Улс орон, сургалтын төлбөр, хөтөлбөр, хугацаагаар шүүгээрэй.</p>
-        <span class="feature-link lc-indigo">Үзэх <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></span>
-      </a>
-      <a href="scholarships.html" class="feature-card">
-        <div class="feature-icon fi-purple">
-          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-          </svg>
-        </div>
-        <h3>Тэтгэлэг Хайгч</h3>
-        <p>Бүрэн болон хагас тэтгэлгийг нээгээрэй. Улс орон, санхүүжилтийн төрөл, шаардлагаар шүүгээрэй.</p>
-        <span class="feature-link lc-purple">Үзэх <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></span>
-      </a>
-      <a href="exams.html" class="feature-card">
-        <div class="feature-icon fi-sky">
-          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-          </svg>
-        </div>
-        <h3>Шалгалтын Мэдээлэл</h3>
-        <p>IELTS, TOEFL, SAT, HSK, TOPIK зэрэг шалгалтуудын иж бүрэн гарын авлага болон бэлтгэлийн материалтай.</p>
-        <span class="feature-link lc-sky">Үзэх <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></span>
-      </a>
-      <a href="guide.html" class="feature-card">
-        <div class="feature-icon fi-emerald">
-          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-          </svg>
-        </div>
-        <h3>Өргөдлийн Гарын Авлага</h3>
-        <p>CV, урамшуулах захидал, зөвлөмжийн захидал болон дүнгийн хуулбарт зориулсан алхам алхмаар гарын авлага.</p>
-        <span class="feature-link lc-emerald">Үзэх <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></span>
-      </a>
+      <div class="problem-card">
+        <span class="problem-card__num">01</span>
+        <h3 class="problem-card__title">Тодорхой Чиглэлгүй Байдал</h3>
+        <p class="problem-card__desc">Өргөдлийн хуваарь, эссэний шаардлага, портфолио болон сургуулиас гадуурх үйл ажиллагаа нь тодорхой зам тэмдэггүйгээр хэт ачааллаж мэдрэгдэж болно.</p>
+      </div>
+
+      <div class="problem-card">
+        <span class="problem-card__num">02</span>
+        <h3 class="problem-card__title">Тарсан Мэдээлэл</h3>
+        <p class="problem-card__desc">Их сургуулиуд, тэтгэлэг, өргөдлийн стратегийн талаарх чухал мэдээлэл өөр өөр платформуудад тархсан байдаг тул бэлтгэл нь төвөгтэй, үр ашиггүй болдог.</p>
+      </div>
+
+      <div class="problem-card">
+        <span class="problem-card__num">03</span>
+        <h3 class="problem-card__title">Менторлогийн Хязгаарлагдмал Боломж</h3>
+        <p class="problem-card__desc">Үйл явцыг мэддэг хүмүүсийн зөвлөгөөгүйгээр оюутнууд боломжоо алдах эсвэл өөрсдийн амжилтаа үр дүнтэй танилцуулахад бэрхшээлтэй тулгарч болно.</p>
+      </div>
+
+      <div class="problem-card">
+        <span class="problem-card__num">04</span>
+        <h3 class="problem-card__title">Амжилтаа Харуулахад Хүндрэлтэй</h3>
+        <p class="problem-card__desc">Төсөл, сайн дурын ажил, амжилтуудыг өргөдлийн материал болгон хувиргахад стратеги болон бүтэцтэй дэмжлэг шаардагдана.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- СУРАЛЦАХ УЛСУУД -->
-<section>
-  <div class="section-inner">
-    <div class="destinations-header">
-      <div>
-        <h2>Суралцах Шилдэг Улсууд</h2>
-        <p>Гадаадад суралцагч оюутнуудад эрхэм нийслэлүүд</p>
+<!-- ═══════════════════════════════════════════════════════════
+     WHAT DO WE HAVE (FEATURES)
+══════════════════════════════════════════════════════════════ -->
+<section class="features">
+  <div class="wrap">
+    <span class="sec-lbl">БИД ЮУ САНАЛ БОЛГОХ ВЭ</span>
+    <div class="features__grid">
+
+      <div class="feat-card">
+        <div class="feat-card__ico">
+          <svg class="icon icon-24" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3 class="feat-card__title">Бүтэцтэй Бэлтгэлийн Систем</h3>
+        <p class="feat-card__desc">Ахлах сургуулийн эхнээс эцсийн өргөдөл гаргах хүртэл оюутнуудыг их сургуулийн өргөдөлд бэлтгэхэд туслах алхам алхмаар тогтолцоо.</p>
       </div>
-      <a href="universities.html" class="view-all">
-        Бүгдийг харах
-        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-        </svg>
-      </a>
-    </div>
-    <div class="destinations-grid">
-      <a href="universities.html" class="dest-card">
-        <span class="dest-flag">🇺🇸</span>
-        <div class="dest-name">АНУ</div>
-        <div class="dest-uni">150 их сургууль</div>
-        <div class="dest-sch">45 тэтгэлэг</div>
-      </a>
-      <a href="universities.html" class="dest-card">
-        <span class="dest-flag">🇬🇧</span>
-        <div class="dest-name">Их Британи</div>
-        <div class="dest-uni">80 их сургууль</div>
-        <div class="dest-sch">30 тэтгэлэг</div>
-      </a>
-      <a href="universities.html" class="dest-card">
-        <span class="dest-flag">🇯🇵</span>
-        <div class="dest-name">Япон</div>
-        <div class="dest-uni">60 их сургууль</div>
-        <div class="dest-sch">25 тэтгэлэг</div>
-      </a>
-      <a href="universities.html" class="dest-card">
-        <span class="dest-flag">🇰🇷</span>
-        <div class="dest-name">Өмнөд Солонгос</div>
-        <div class="dest-uni">40 их сургууль</div>
-        <div class="dest-sch">20 тэтгэлэг</div>
-      </a>
-      <a href="universities.html" class="dest-card">
-        <span class="dest-flag">🇸🇬</span>
-        <div class="dest-name">Сингапур</div>
-        <div class="dest-uni">10 их сургууль</div>
-        <div class="dest-sch">15 тэтгэлэг</div>
-      </a>
-      <a href="universities.html" class="dest-card">
-        <span class="dest-flag">🇦🇺</span>
-        <div class="dest-name">Австрали</div>
-        <div class="dest-uni">35 их сургууль</div>
-        <div class="dest-sch">18 тэтгэлэг</div>
-      </a>
+
+      <div class="feat-card">
+        <div class="feat-card__ico">
+          <svg class="icon icon-24" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="feat-card__title">Мэргэжлийн Менторлог</h3>
+        <p class="feat-card__desc">Эссэ, портфолио болон өргөдлийн стратегийн талаар санал хүсэлт өгдөг туршлагатай менторуудын зөвлөгөө.</p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-card__ico">
+          <svg class="icon icon-24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <h3 class="feat-card__title">Ухаалаг Төлөвлөлтийн Хэрэгслүүд</h3>
+        <p class="feat-card__desc">Эцсийн хугацааг хянах, баримт бичгийг удирдах, амжилтуудыг нэг дороос зохион байгуулах суурилагдсан хэрэгслүүд.</p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-card__ico">
+          <svg class="icon icon-24" viewBox="0 0 24 24"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>
+        </div>
+        <h3 class="feat-card__title">Баталгаажсан Нөөц</h3>
+        <p class="feat-card__desc">Оюутнуудад мэдлэгт суурилсан шийдвэр гаргахад туслах их сургуулиуд, тэтгэлэг, хөтөлбөрүүдийн талаарх сонгомол мэдээлэл.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- СЭТГЭГДЭЛҮҮД -->
-<section class="testi-bg">
-  <div class="section-inner">
-    <div class="section-head">
-      <h2>Оюутнуудын Амжилтын Түүхүүд</h2>
-      <p>Гадаадад суралцах мөрөөдлөө биелүүлсэн бодит оюутнууд</p>
-    </div>
-    <div class="testi-grid">
-      <article class="testi-card">
-        <div class="stars" aria-label="5 одтой үнэлгээ">
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="testi-text">"StudyAbroad Hub надад NUS ASEAN тэтгэлгийг олоход тусалсан. Шалгалтын бэлтгэлийн гарын авлагууд IELTS бэлтгэлд маш их тусласан!"</p>
-        <div class="testi-author">
-          <div class="testi-avatar">Н</div>
-          <div>
-            <div class="testi-name">Нямдорж Батмөнх</div>
-            <div class="testi-meta">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-              СӨБ-5 → NUS, Сингапур
-            </div>
+<!-- ═══════════════════════════════════════════════════════════
+     CLASSES
+══════════════════════════════════════════════════════════════ -->
+<section class="classes-sec">
+  <div class="wrap">
+    <span class="sec-lbl">ХИЧЭЭЛҮҮД</span>
+    <div class="classes__grid">
+
+      <div class="class-card">
+        <div class="class-card__head">
+          <div class="class-card__ico">
+            <svg class="icon icon-20" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
+          <h3 class="class-card__title">Эссэ Бичих &amp; Өгүүлэх Арга</h3>
         </div>
-      </article>
-      <article class="testi-card">
-        <div class="stars" aria-label="5 одтой үнэлгээ">
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="testi-text">"MEXT тэтгэлгийн тухай хэрэгтэй бүх зүйлийг эндээс олсон. Өргөдлийн гарын авлагын хэсэг миний баримт бичгийг маш хүчтэй болгосон."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">Т</div>
-          <div>
-            <div class="testi-name">Төмөрбаатар Ганбаяр</div>
-            <div class="testi-meta">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-              СӨБ-23 → Токиогийн Их Сургууль
-            </div>
-          </div>
-        </div>
-      </article>
-      <article class="testi-card">
-        <div class="stars" aria-label="5 одтой үнэлгээ">
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="testi-text">"Тэтгэлгийн шүүлтүүр гайхалтай. Энэ платформоор дамжуулан Australia Awards-ийг нээж, бүрэн тэтгэлэг авсан!"</p>
-        <div class="testi-author">
-          <div class="testi-avatar">Л</div>
-          <div>
-            <div class="testi-name">Лхагвасүрэн Оюунцэцэг</div>
-            <div class="testi-meta">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-              СӨБ-11 → Мельбурний Их Сургууль
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ДУУДЛАГА -->
-<section class="cta-section">
-  <div class="cta-inner">
-    <h2>Аяллаа Эхлэхэд Бэлэн үү?</h2>
-    <p>Манай платформоор дамжуулан мөрөөдлийн их сургуулиа олсон мянга мянган оюутнуудтай нэгдэгтүн.</p>
-    <div class="cta-btns">
-      <a href="auth.html" class="btn btn-white btn-lg">Үнэгүй Бүртгүүлэх</a>
-      <a href="universities.html" class="btn btn-outline-white btn-lg">Их Сургуулиудыг Харах</a>
-    </div>
-  </div>
-</section>
-
-<!-- ХӨЛИЙН ХЭСЭГ -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-logo">
-      <div class="footer-logo-icon">
-        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/>
-        </svg>
+        <p class="class-card__desc">Өөрийн жинхэнэ дуу хоолойг тусгасан хүчтэй хувийн мэдэгдэл болон нэмэлт эссэ бичихийг эзэмшинэ үү.</p>
+        <a href="#" class="class-card__link">
+          ХИЧЭЭЛ ҮЗЭХ
+          <svg class="icon icon-16" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
       </div>
-      <span>StudyAbroadHub</span>
+
+      <div class="class-card">
+        <div class="class-card__head">
+          <div class="class-card__ico">
+            <svg class="icon icon-20" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3 class="class-card__title">Портфолио &amp; Төсөл Хөгжүүлэлт</h3>
+        </div>
+        <p class="class-card__desc">Хүчтэй портфолио бүрдүүлэх, төслүүдийг баримтжуулах, ажлаа мэргэжлийн түвшинд танилцуулах зөвлөгөө.</p>
+        <a href="#" class="class-card__link">
+          ХИЧЭЭЛ ҮЗЭХ
+          <svg class="icon icon-16" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <div class="class-card">
+        <div class="class-card__head">
+          <div class="class-card__ico">
+            <svg class="icon icon-20" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <h3 class="class-card__title">Өргөдлийн Стратеги</h3>
+        </div>
+        <p class="class-card__desc">Элсэлт хэрхэн явагддагийг ойлгож, өөрийн профайлыг бэхжүүлэх стратегиудыг сурна уу.</p>
+        <a href="#" class="class-card__link">
+          ХИЧЭЭЛ ҮЗЭХ
+          <svg class="icon icon-16" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <div class="class-card">
+        <div class="class-card__head">
+          <div class="class-card__ico">
+            <svg class="icon icon-20" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="class-card__title">Ярилцлагын Бэлтгэл</h3>
+        </div>
+        <p class="class-card__desc">Дүрд тоглосон ярилцлага дадлагалж, санаагаа илэрхийлэхдээ итгэлтэй болно уу.</p>
+        <a href="#" class="class-card__link">
+          ХИЧЭЭЛ ҮЗЭХ
+          <svg class="icon icon-16" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
     </div>
-    <p class="footer-copy">© 2026 StudyAbroadHub. Монгол оюутнуудад зориулан бүтээсэн.</p>
-    <nav class="footer-links" aria-label="Хөлийн навигаци">
-      <a href="universities.html">Их сургуулиуд</a>
-      <a href="scholarships.html">Тэтгэлэгүүд</a>
-      <a href="exams.html">Шалгалтууд</a>
-      <a href="guide.html">Элсэлтийн гарын авлага</a>
-    </nav>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     OPPORTUNITIES
+══════════════════════════════════════════════════════════════ -->
+<section class="opps" id="scholarships">
+  <div class="wrap">
+    <span class="sec-lbl">БОЛОМЖУУД</span>
+    <div class="opps__grid">
+      <div class="opp-card">
+        <h3 class="opp-card__title">Менторлогийн Хөтөлбөрүүд</h3>
+        <p class="opp-card__desc">Өргөдлийн аяллаар дамжуулан тантай хамт явах менторуудтай холбогдоно уу.</p>
+      </div>
+      <div class="opp-card">
+        <h3 class="opp-card__title">Портфолио Хянуулах</h3>
+        <p class="opp-card__desc">Төслүүд болон амжилтуудаа сайжруулахын тулд мэргэжлийн санал хүсэлт авна уу.</p>
+      </div>
+      <div class="opp-card">
+        <h3 class="opp-card__title">Тэтгэлгийн Зөвлөгөө</h3>
+        <p class="opp-card__desc">Тэтгэлгүүдийг нээж, санхүүжилт авах магадлалаа нэмэгдүүлэх стратегиудыг сурна уу.</p>
+      </div>
+      <div class="opp-card">
+        <h3 class="opp-card__title">Нийгэмлэгийн Сүлжээ</h3>
+        <p class="opp-card__desc">Дэлхийн шилдэг их сургуулиудад бэлтгэж буй идэвхтэй оюутнуудын нийгэмлэгт нэгдэнэ үү.</p>
+      </div>
+    </div>
+    <div class="opps__cta">
+      <h3 class="opps__cta-title">Дараагийн Алхамаа Хийхэд Шаардлагатай Бүх Зүйл</h3>
+      <a href="dashboard.html" class="btn-navy">
+        ОДОО НЭГДЭХ
+        <svg class="icon icon-20" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     EVERYTHING YOU NEED — NUMBERED
+══════════════════════════════════════════════════════════════ -->
+<section class="everything">
+  <div class="wrap">
+    <span class="sec-lbl">ТАНД ШААРДЛАГАТАЙ БҮХ ЗҮЙ</span>
+    <ul>
+
+      <li class="everything__item">
+        <span class="everything__ghost">01</span>
+        <h3 class="everything__title">Их Сургуулийн Хайлт</h3>
+        <p class="everything__desc">Дэлхий даяар их сургуулиуд болон хөтөлбөрүүдийг судлаарай. Next Step нь таны эрдмийн сонирхол, карьерын зорилго, өргөдлийн профайлтай нийцэх байгууллагуудыг олоход туслана.</p>
+      </li>
+
+      <li class="everything__item">
+        <span class="everything__ghost">02</span>
+        <h3 class="everything__title">Тэтгэлэг Хайлт</h3>
+        <p class="everything__desc">Дэлхийн их сургуулиуд болон байгууллагуудаас олгох бүтэн болон хагас тэтгэлгүүдийг олоорой. Next Step нь гадаадад суралцахыг илүү хүртээмжтэй болгох санхүүжилтийн боломжуудыг тодорхойлоход туслана.</p>
+      </li>
+
+      <li class="everything__item">
+        <span class="everything__ghost">03</span>
+        <h3 class="everything__title">Шалгалтын Мэдээлэл</h3>
+        <p class="everything__desc">IELTS, TOEFL, SAT болон бусад элсэлтийн шалгалтуудын талаарх чухал мэдээлэлтэй танилцаарай. Шаардлагууд, бэлтгэлийн стратегиуд болон оноонд тавигдах хүлээлтийн талаар сурна уу.</p>
+      </li>
+
+      <li class="everything__item">
+        <span class="everything__ghost">04</span>
+        <h3 class="everything__title">Өргөдлийн Гарын Авлага</h3>
+        <p class="everything__desc">CV, хувийн мэдэгдэл, зөвлөмжийн захидал болон бусад шаардлагатай баримт бичгүүдийг багтаасан өргөдлийн материалуудаа алхам алхмаар бэлтгэхэд зөвлөгөө авна уу.</p>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     EXAM ORGANIZATIONS
+══════════════════════════════════════════════════════════════ -->
+<section class="exam-orgs" id="exams">
+  <div class="wrap">
+    <p class="exam-orgs__title">ХҮЛЭЭН ЗӨВШӨӨРӨГДСӨН ОЛОН УЛСЫН ШАЛГАЛТУУД</p>
+    <div class="exam-orgs__grid">
+      <div class="exam-org-item"><div class="exam-org-badge bg-red-600"><span>IELTS</span></div><span class="exam-org-name">British Council</span></div>
+      <div class="exam-org-item"><div class="exam-org-badge bg-blue-600"><span>TOEFL</span></div><span class="exam-org-name">ETS</span></div>
+      <div class="exam-org-item"><div class="exam-org-badge bg-green-700"><span>SAT</span></div><span class="exam-org-name">College Board</span></div>
+      <div class="exam-org-item"><div class="exam-org-badge bg-red-700"><span>HSK</span></div><span class="exam-org-name">Hanban</span></div>
+      <div class="exam-org-item"><div class="exam-org-badge bg-blue-800"><span>TOPIK</span></div><span class="exam-org-name">NIIED</span></div>
+      <div class="exam-org-item"><div class="exam-org-badge bg-purple-700"><span>GRE</span></div><span class="exam-org-name">ETS</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+
+      <div>
+        <div class="footer__brand-row">
+          <div class="footer__brand-ico">
+            <svg class="icon icon-24" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 6.67 1.67 10 0v-5"/></svg>
+          </div>
+          <span class="footer__brand-name">ДАРААГИЙН АЛХАМ</span>
+        </div>
+        <p class="footer__tagline">Дэлхийн шилдэг их сургуулиудад хүрэх аялал энд эхэлнэ.</p>
+      </div>
+
+      <div>
+        <p class="footer__col-title">СУДЛАХ</p>
+        <ul class="footer__links">
+          <li><a href="uni.html" class="footer__link">Их Сургуулиуд</a></li>
+          <li><a href="scholar.html" class="footer__link">Тэтгэлгүүд</a></li>
+          <li><a href="exam-info.html" class="footer__link">Шалгалтууд</a></li>
+          <li><a href="#"             class="footer__link">Өргөдлийн Гарын Авлага</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer__col-title">ХОЛБОО БАРИХ</p>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Бидний Тухай</a></li>
+          <li><a href="#" class="footer__link">Холбоо Барих</a></li>
+          <li><a href="#" class="footer__link">Нийгэмлэг</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 ДАРААГИЙН АЛХАМ ПЛАТФОРМ. БҮХ ЭРХ ХАМГААЛАГДСАН.</p>
+    </div>
   </div>
 </footer>
 
